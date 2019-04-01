@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [CoalDemo]">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNg"/>
+  </listeners>
+  <test name="CoalDemo Test(failed)">
     <classes>
       <class name="com.qa.testcases.LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="setExtent"/>
           <include name="setUp"/>
-          <include name="endReport"/>
           <include name="loginPageTitleTest"/>
           <include name="loginTest"/>
         </methods>
       </class> <!-- com.qa.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- CoalDemo Test(failed) -->
+</suite> <!-- Failed suite [CoalDemo] -->

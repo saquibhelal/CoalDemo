@@ -25,7 +25,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 	public class Xls_Reader {
-		/*
+		
 		//public static String filename = System.getProperty("user.dir")+"\\src\\com\\qtpselenium\\xlsx\\Suite.xlsx";
 		public  String path;
 		public  FileInputStream fis = null;
@@ -501,13 +501,13 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 							System.out.println(datatable.getCellData("TC5", col, 1)); 
 						} 
 			}
-	*/
+	
 		
 		
 		
 		
 		
-		public static void excelFile() throws IOException{
+		/*public static void excelFile() throws IOException{
 			File src = new File("E:\\project_for_selenium\\Selenium_Workspace\\DemoCoal"
 					+ "\\src\\main\\java\\com\\qa\\testdata\\TestData.xlsx");
 			FileInputStream fis = new FileInputStream(src);
@@ -524,7 +524,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 			
 			 
 			
-		}
+		}*/
 		
 		
 		

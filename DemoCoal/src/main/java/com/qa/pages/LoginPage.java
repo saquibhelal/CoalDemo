@@ -19,10 +19,7 @@ public class LoginPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	/*public String validateLoginPage(){
-	String valCheck="Welcome to coaljunction e-auction services";
-	return valCheck;
-}*/
+	
 	public String validateLoginPageTitle(){
 		return driver.getTitle();
 	}

@@ -6,7 +6,9 @@
       <class name="com.qa.testcases.LoginPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="setExtent"/>
           <include name="setUp"/>
+          <include name="endReport"/>
           <include name="loginPageTitleTest"/>
           <include name="loginTest"/>
         </methods>
