@@ -6,11 +6,14 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import com.qa.util.TestUtil;
 
 public class TestBase {
 
@@ -23,8 +26,8 @@ public TestBase(){
 		
 		try{
 			Pro=new Properties();
-			FileInputStream fis=new FileInputStream("E:\\project_for_selenium\\Selenium_Workspace"
-					+ "\\DemoCoal\\src\\main\\java\\co\\qa\\config\\config.properties");
+			FileInputStream fis=new FileInputStream("C:\\Users\\Rehan\\git\\CoalDemo\\DemoCoal"
+					+ "\\src\\main\\java\\co\\qa\\config\\config.properties");
 			Pro.load(fis);
 			
 		}

@@ -13,7 +13,7 @@ import com.qa.util.TestUtil;
 public class LoginPageTest extends TestBase {
 
 	LoginPage loginPage;
-	String sheetName="sheetName";
+	String sheetName="Sheet1";
 	
 	public LoginPageTest(){
 		super();
@@ -31,15 +31,14 @@ public class LoginPageTest extends TestBase {
 		return data;
 	}
 	
-	@Test(priority=1, dataProvider="getCoalSheetData")
+	@Test(priority=1)
 	public void loginPageTitleTest(){
 		String title=loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "Welcome to coaljunction e-auction services");
+		Assert.assertEquals(title,"online imported coal forward, spot e-auction kolkata, India");
 	}
  
 	
-	
-	@Test(priority=2)
+	@Test(priority=2,dataProvider="getCoalSheetData")
 	public void loginTest(String usNm,String Lgn) throws InterruptedException{
 		Thread.sleep(7000);
 		loginPage.loginUser(usNm, Lgn);
