@@ -22,8 +22,8 @@ import com.relevantcodes.extentreports.LogStatus;
 public class LoginPageTest extends TestBase {
 
 	LoginPage loginPage;
-	public ExtentReports extent;
-	public ExtentTest extentTest;
+	 ExtentReports extent;
+	 ExtentTest extentTest;
 	String sheetName="Sheet1";
 	
 	public LoginPageTest(){
@@ -101,4 +101,5 @@ public class LoginPageTest extends TestBase {
 		System.out.println("======Browser is shutting down=====\n");
 		 driver.quit();
 	}
+	
 }
